@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Terrapin Sensors</title>
+
+		<style>
+			.last_reading {
+				font-size: 150%;
+			}
+			.reading_spans {
+				display:inline-block;    
+				width:33%;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div><h1><img width="100px" src="square-animal-7-turtle.png" alt="terrapin" />Terrapin Sensors</h1></div>
+	<hr />
+	<span class="reading_spans"><div class="last_reading">Light: ${last_light}%</div><div>${last_light_stamp}</div></span>
+	<span class="reading_spans"><div class="last_reading">Temperature: ${last_temp} degC</div><div>${last_temp_stamp}</div></span>
+	<span class="reading_spans"><div class="last_reading">Moisture: ${last_moist}%</div><div>${last_moist_stamp}</div></span>
+	<hr />
+	<h2>Previous Two Minutes</h3>
+
+	<img src="light_2mins.png" alt="light previous 2 mins" />
+	<img src="temp_2mins.png" alt="temp previous 2 mins" />
+	<img src="moist_2mins.png" alt="moisture previous 2 mins" />
+
+	<h2>Previous Hour</h3>
+
+	<img src="light_1hour.png" alt="light previous hour" />
+	<img src="temp_1hour.png" alt="temp previous hour" />
+	<img src="moist_1hour.png" alt="moisture previous hour" />
+
+	<h2>Previous Day</h3>
+
+	<img src="light_1day.png" alt="light previous day" />
+	<img src="temp_1day.png" alt="temp previous day" />
+	<img src="moist_1day.png" alt="moisture previous day" />
+
+	<h2>Previous Week</h3>
+
+	<img src="light_1week.png" alt="light previous week" />
+	<img src="temp_1week.png" alt="temp previous week" />
+	<img src="moist_1week.png" alt="moisture previous week" />
+
+	<h2>Previous Month</h3>
+
+	<img src="light_1month.png" alt="light previous month" />
+	<img src="temp_1month.png" alt="temp previous month" />
+	<img src="moist_1month.png" alt="moisture previous month" />
+
+	<h2>Previous Year</h3>
+
+	<img src="light_1year.png" alt="light previous year" />
+	<img src="temp_1year.png" alt="temp previous year" />
+	<img src="moist_1year.png" alt="moisture previous year" />
+
+	</body>
+</html>
+
