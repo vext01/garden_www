@@ -21,11 +21,11 @@
 	<span class="reading_spans"><div class="last_reading">Temperature: ${last_temp} degC</div><div>${last_temp_stamp}</div></span>
 	<span class="reading_spans"><div class="last_reading">Moisture: ${last_moist}%</div><div>${last_moist_stamp}</div></span>
 	<hr />
-	<h2>Previous Two Minutes</h3>
+	<h2>Previous Five Minutes</h3>
 
-	<img src="light_2mins.png" alt="light previous 2 mins" />
-	<img src="temp_2mins.png" alt="temp previous 2 mins" />
-	<img src="moist_2mins.png" alt="moisture previous 2 mins" />
+	<img src="light_5mins.png" alt="light previous 5 mins" />
+	<img src="temp_5mins.png" alt="temp previous 5 mins" />
+	<img src="moist_5mins.png" alt="moisture previous 5 mins" />
 
 	<h2>Previous Hour</h3>
 
@@ -56,6 +56,9 @@
 	<img src="light_1year.png" alt="light previous year" />
 	<img src="temp_1year.png" alt="temp previous year" />
 	<img src="moist_1year.png" alt="moisture previous year" />
+
+	<hr />
+	Code on github: <a href="https://github.com/vext01/garden_www">Web interface</a> :: <a href="https://github.com/vext01/terrapin/">NodeMCU Firmware</a>
 
 	</body>
 </html>

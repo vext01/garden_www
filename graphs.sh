@@ -1,4 +1,4 @@
-GRID2MIN="--x-grid SECOND:20:MINUTE:1:MINUTE:1:0:%X"
+GRID5MIN="--x-grid SECOND:20:MINUTE:1:MINUTE:1:0:%X"
 GRID1HOUR="--x-grid MINUTE:5:MINUTE:15:MINUTE:15:0:%X"
 GRID1DAY="--x-grid HOUR:1:HOUR:5:HOUR:5:0:%H:%M"
 #GRID1WEEK=""
@@ -8,7 +8,7 @@ TEMPYLABEL="--vertical-label Temp(degC)"
 LIGHTYLABEL="--vertical-label Light(Percent)"
 MOISTYLABEL="--vertical-label Moisture(Percent)"
 WIDTH="-w 300"
-TIMESPEC2MIN="--end now --start end-120s"
+TIMESPEC5MIN="--end now --start end-300s"
 TIMESPEC1HOUR="--end now --start end-1h"
 TIMESPEC1DAY="--end now --start end-1d"
 TIMESPEC1WEEK="--end now --start end-7d"
@@ -16,9 +16,9 @@ TIMESPEC1MONTH="--end now --start end-1m"
 TIMESPEC1YEAR="--end now --start end-1y"
 
 # 2 mins
-rrdtool graph ${WIDTH} ${LIGHTYLABEL} ${GRID2MIN} ${TIMESPEC2MIN} htdocs/light_2mins.png DEF:light=data/garden/light.rrd:garden_light:AVERAGE LINE2:light#ff0000
-rrdtool graph ${WIDTH} ${MOISTYLABEL} ${GRID2MIN} ${TIMESPEC2MIN} htdocs/moist_2mins.png DEF:moist=data/garden/moist.rrd:garden_moist:AVERAGE LINE2:moist#00ff00
-rrdtool graph ${WIDTH} ${TEMPYLABEL} ${GRID2MIN} ${TIMESPEC2MIN} htdocs/temp_2mins.png DEF:temp=data/garden/temp.rrd:garden_temp:AVERAGE LINE2:temp#0000ff
+rrdtool graph ${WIDTH} ${LIGHTYLABEL} ${GRID5MIN} ${TIMESPEC5MIN} htdocs/light_5mins.png DEF:light=data/garden/light.rrd:garden_light:AVERAGE LINE2:light#ff0000
+rrdtool graph ${WIDTH} ${MOISTYLABEL} ${GRID5MIN} ${TIMESPEC5MIN} htdocs/moist_5mins.png DEF:moist=data/garden/moist.rrd:garden_moist:AVERAGE LINE2:moist#00ff00
+rrdtool graph ${WIDTH} ${TEMPYLABEL} ${GRID5MIN} ${TIMESPEC5MIN} htdocs/temp_5mins.png DEF:temp=data/garden/temp.rrd:garden_temp:AVERAGE LINE2:temp#0000ff
 
 # 1 hour
 rrdtool graph ${WIDTH} ${LIGHTYLABEL} ${GRID1HOUR} ${TIMESPEC1HOUR} htdocs/light_1hour.png DEF:light=data/garden/light.rrd:garden_light:AVERAGE LINE2:light#ff0000
